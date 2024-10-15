@@ -29,7 +29,7 @@ L'application doit permettre à un professeur de créer des cours, d'y associer 
 #### Contraintes Techniques
 - **Android** : L'application doit être développée pour Android en Java ou en Kotlin.
 - **Pas de modification après la création d'une évaluation** : Pour simplifier le projet, une fois une évaluation créée, on ne peut plus la modifier (ni son nom, ni son maximum de points, ni ses sous-évaluations). On peut cependant ajouter des notes, les modifier ou les supprimer.
-- **Fragments et base de données locale** : L'interface sera gérée via des activités, des fragments, des morceaux de layouts XML, ... Choisissez la meilleure approche pour réduire le code et augmenter la réutilisation (beaucoup d'écrans se ressemblent : on peut refactoriser). 
+- **Fragments** : L'interface sera gérée via des activités, des fragments, des morceaux de layouts XML, ... Choisissez la meilleure approche pour réduire le code et augmenter la réutilisation (beaucoup d'écrans se ressemblent : on peut refactoriser). Pensez à bien gérer la navigation entre les écrans (gérez donc correctement le back button).
 - **Architecture** : Utilisez une architecture MVC (ou MVVM) pour structurer le code et faciliter la maintenance et l'évolution de l'application. Séparez bien les responsabilités entre les classes et les composants.
 - **Polymorphisme** : Utilisez le polymorphisme pour gérer les différentes évaluations et sous-évaluations de manière générique. Si vous mettez en place une bonne hiérarchie de classes, vous allez gagner énormément de temps pour la gestion des points.
 - **Bibliothèques** : N'hésitez pas à utiliser des bibliothèques tierces pour faciliter le développement. 
